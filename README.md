@@ -48,12 +48,18 @@ pip install open3d
 
 The following tested on Ubuntu 16.04
 ```
-conda create -n 3dssg pytorch==1.7.1 cudatoolkit=10.1 -c pytorch -c conda-forge
+conda create -n PY373dssg python=3.7 pytorch==1.7.1 cudatoolkit=10.1 -c pytorch -c conda-forge
 conda install -c conda-forge tensorboard
 conda install -c conda-forge trimesh
-conda install -c open3d-admin -c conda-forge open3d
+ python -m pip install open3d==0.9
+
 export CUDA=10.1
 pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
+pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
+pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
+pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
+
+pip install torch-geometric
 etc
 
 ```
