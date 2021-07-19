@@ -81,7 +81,7 @@ The trained model can be traced and then be used on our [SceneGraphFusion](https
 ```
 python main.py --mode trace --config ./path/to/config
 ```
-
+Adapt the root directory in config_CVPR21.json to your own root directory
 For example, to trace our pre-trained model
 ```
 python main.py --mode trace --config ./CVPR21/config_CVPR21.json
