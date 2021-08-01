@@ -60,7 +60,7 @@ pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUD
 pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
 
 pip install torch-geometric
-etc
+pip install plyfile
 
 ```
 
