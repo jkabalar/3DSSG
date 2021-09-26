@@ -59,7 +59,7 @@ class SGFN():
             num_rel_class = len(self.dataset_eval.relationNames)
             dataset = self.dataset_eval
         except:
-            print('canno build eval dataset.')
+            print('cannot build eval dataset.')
             self.dataset_eval = None
             
         ''' Build Model '''
