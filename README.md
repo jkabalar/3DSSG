@@ -53,8 +53,8 @@ conda install -c conda-forge tensorboard
 conda install -c conda-forge trimesh
  python -m pip install open3d==0.9
 
-export CUDA=10.1
-pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
+export CUDA=cu101
+
 pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
 pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
 pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+${CUDA}.html
@@ -62,6 +62,8 @@ pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+$
 pip install torch-geometric
 pip install plyfile
 
+pip install torch-scatter==2.0.7 -f https://data.pyg.org/whl/torch-1.7.1+cu101.html
+conda install -c conda-forge tqdm
 ```
 
 # Run
