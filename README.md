@@ -51,7 +51,7 @@ The following tested on Ubuntu 16.04
 conda create -n PY373dssg python=3.7 pytorch==1.7.1 cudatoolkit=10.1 -c pytorch -c conda-forge
 conda install -c conda-forge tensorboard
 conda install -c conda-forge trimesh
- python -m pip install open3d==0.9
+ python -m pip install open3d==0.8
 
 export CUDA=cu101
 
